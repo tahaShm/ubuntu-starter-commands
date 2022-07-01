@@ -3,6 +3,7 @@ sudo apt install git
 git config --global credential.helper store
 git config --global user.email "taha.shabani.m@gmail.com"
 git config --global user.name "tahashm"
+# need to set password
 
 # vs code
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
