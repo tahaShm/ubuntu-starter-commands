@@ -10,6 +10,7 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
 sudo apt install code
+## or just
 sudo snap install --classic code
 
 # sublime
@@ -39,6 +40,9 @@ npm i -g react-cli react
 # telegram
 sudo snap install telegram-desktop
 
+# whatsapp
+sudo snap install whatsapp-for-linux
+
 # postman
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 sudo tar -xzf postman.tar.gz -C /opt
@@ -58,6 +62,10 @@ sudo apt install python3-pip python3-dev
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 pip3 install jupyter
+pip3 install jupyter lab
+pip3 install jupyter notebook
+# on ~./zshrc: export PATH=$PATH:~/.local/bin/
+export PATH="$HOME/.local/bin:$PATH"
 
 #texmaker
 sudo apt install texmaker
